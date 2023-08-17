@@ -1,0 +1,151 @@
+.etb.checkout, .etb.pse-result{
+  padding-top: 100px;
+
+  h1.title{
+    color: $etb-blue-txt;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  #etb-card-number{
+    min-width: 265px;
+    margin-right: 6px;
+  }
+
+  #etb-card-code{
+    min-width: 226px;
+  }
+
+  #secure-code-modal, #imei-modal{
+    text-align: center;
+  }
+
+  .card-item, .point-item{
+    display: block;
+    height: 40px;
+    text-align: center;
+  }
+
+  .card-item{
+    background-image: url(../images/credit_cards.png);
+    width: 60px;
+  }
+  .card-item.visa{
+    background-position: 0 0;
+  }
+  .card-item.master{
+    background-position: -236px 0;
+  }
+  .card-item.american{
+    background-position: -79px 0;
+  }
+  .card-item.diners{
+    background-position: -158px 0;
+  }
+  .card-item.codensa{
+    background-position: -315px 0;
+    width: 82px;
+  }
+
+  .online-item{
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+
+  .online-item.pse{
+    background-image: url('../images/pse.png');
+  }
+
+  .payu-loader, .ondelivery-loader{
+    margin-bottom: 10px;
+  }
+
+  .point-item{
+    background-image: url('../images/payment_points.png');
+    width: 130px;
+  }
+
+  .point-item.baloto{
+    background-position: -130px 0;
+  }
+
+  .expiration-txt{
+    display: block;
+    margin-right: 30px;
+  }
+
+  .form-group{
+    .btn-sell{
+      background-color: $etb-orange;
+      border-radius: 16px;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 1px;
+      min-width: 170px;
+      text-transform: uppercase;
+    }
+  }
+
+  .form-group.payment{
+    margin: 5px 10px;
+    text-align: center;
+  }
+
+  .form-group.payment-txt{
+    margin-right: 15px;
+    width: 120px;
+  }
+
+  .form-group.terms{
+    max-width: 390px;
+    margin-right: 10px;
+    label{
+      font-size: 0.9em;
+    }
+  }
+
+  .input-group-addon{
+    background-color: #fff;
+    color: #bbb;
+  }
+
+  .input-group.card{
+    margin-bottom: 18px;
+  }
+
+  .payment-secure-txt{
+    font-size: 0.9em;
+    margin-top: 5px;
+    span{
+      color: $etb-blue-txt;
+      font-size: 0.8em;
+    }
+    img{
+      display: inline-block;
+      max-height: 30px;
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  .payment-subtitle{
+    margin-bottom: 11px;
+  }
+
+  .subtitle{
+    color: $etb-blue-txt;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .etb.checkout{
+    .input-group.card{
+      margin-bottom: 0px;
+    }
+  }
+}

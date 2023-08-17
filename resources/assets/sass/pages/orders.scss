@@ -1,0 +1,66 @@
+.etb.orders{
+  font-family: 'Source Sans Pro', sans-serif;
+  h1, h1+p{
+    color: $etb-blue-txt;
+  }
+
+  .transaction-modal{
+    text-align: center;
+    .modal-body{
+      button{
+        border-radius: 20px;
+        background-color: $etb-orange;
+        color: #fff;
+        margin: 30px 0;
+        padding: 10px 18px;
+      }
+
+      p{
+        margin: 10px auto;
+        width: 80%;
+      }
+    }
+    .modal-title{
+      font-size: 1.8em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+
+  .btn-exchange{
+    background-color: $etb-orange;
+    border-radius: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 8px 14px;
+    span{
+      margin-right: 5px;
+    }
+  }
+
+  .orders-wrapper{
+    color: #666;
+
+    table.order{
+      td.state-icon{
+        color: $etb-blue-txt;
+      }
+      td.description{
+        .date{
+          color: $etb-blue-txt;
+        }
+      }
+      td.pointer{
+        color: $etb-blue-txt;
+      }
+    }
+
+    .no-orders{
+      hr{
+        height: 0px;
+        border-bottom: 2px solid $etb-blue;
+      }
+    }
+  }
+}

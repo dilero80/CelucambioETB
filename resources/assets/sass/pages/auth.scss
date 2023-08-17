@@ -1,0 +1,76 @@
+.etb.auth{
+  background-color: #083b4e;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 168%;
+  position: relative;
+  width: 100%;
+  p.signup{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    a{
+      color: $etb-orange-txt;
+    }
+  }
+  .form-wrapper{
+    background-color: #fff;
+    margin: 20px auto;
+    margin-top: 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: 90%;
+
+    .bottom, .top{
+      text-align: center;
+    }
+    .bottom{
+      margin: auto;
+      max-width: 70%;
+      button{
+        background-color: $etb-blue;
+        letter-spacing: 1px;
+        margin: 20px 0;
+        margin-top: 10px;
+      }
+      h1, h1 small{
+        color: $etb-orange-txt;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      h1{
+        font-size: 2.1em;
+        margin-bottom: 30px;
+        small{
+          display: block;
+        }
+      }
+    }
+    .top{
+      background-color: $etb-orange;
+      padding: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) and (orientation: landscape) {
+  .etb.auth{
+    height: 282%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .etb.auth{
+    background-image: url(../images/img_ingresar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .etb.auth{
+    height: 125%;
+  }
+}

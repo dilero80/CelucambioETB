@@ -1,0 +1,159 @@
+#your-new-smartphone{
+  .device-item{
+    background-color: #fff;
+    border: 1px solid #cecece;
+    display: inline-block;
+    margin: 10px 6px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
+    width: 180px;
+
+    .btn-action{
+      font-size: 0.9em;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      padding: 6px 8px;
+    }
+
+    .image{
+      margin-bottom: 5px;
+      min-height: 190px;
+      padding: 15px 10px;
+      position: relative;
+
+      .overlay-more{
+        background-color: transparent;
+        bottom: 0px;
+        color: transparent;
+        cursor: pointer;
+        font-size: 3em;
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 5;
+
+        &:hover{
+          background-color: $etb-blue;
+          opacity: 0.8;
+          color: #fff;
+        }
+
+        span{
+          padding: 40% 0;
+        }
+      }
+
+      img{
+        margin: auto;
+        max-height: 180px;
+        max-width: 100px;
+      }
+    }
+
+    .line-deco{
+      background-image: url('../images/device_line.png');
+      background-size: contain;
+      height: 15px;
+      margin: auto;
+      margin-bottom: 5px;
+      width: 85%;
+    }
+
+    .name{
+      min-height: 43px;
+    }
+
+    .price{
+      color: #777;
+      .amount{
+        font-weight: 700;
+      }
+    }
+
+    .price-discount{
+      background-color: $etb-blue;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      padding: 5px;
+      text-transform: uppercase;
+    }
+
+    .view-details{
+      cursor: pointer;
+      font-size: 0.9em;
+      text-decoration: underline;
+    }
+  }
+
+  .devices-list{
+    background-color: #f8f8f8;
+    border: 1px solid #d1e2e6;
+    margin-top: 10px;
+    padding: 8px 2px;
+    text-align: center;
+    p{
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+
+  .form-group{
+    .customer-select-state {
+      border: 1px solid $etb-orange;
+      border-radius: 4px;
+      color: $etb-orange;
+      height: 40px;
+      margin-top: -2px;
+      overflow: hidden;
+
+      div{
+        cursor: pointer;
+        display: block;
+        float: left;
+        font-size: 0.78em;
+        height: 100%;
+        padding: 8px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 50%;
+
+        &.selected{
+          background-color: $etb-orange;
+          color: #fff;
+        }
+      }
+    }
+
+    .device-offer{
+      .amount{
+        font-size: 1.3em;
+        font-weight: 700;
+      }
+    }
+
+    .warranty {
+      display: none;
+    }
+
+    .warranty.selected {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #your-new-smartphone{
+    .form-group{
+      .customer-select-state {
+        div{
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+

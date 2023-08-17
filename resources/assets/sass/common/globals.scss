@@ -1,0 +1,152 @@
+html,body, main{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a{
+	color: inherit;
+  text-decoration: none;
+}
+
+body{
+  font-family: $font-family-base;
+	font-size: $font-size-base;
+}
+
+.btn-action{
+  background-color: $etb-orange;
+  border-radius: 16px;
+  color: #fff;
+  font-weight: 700;
+  margin: auto;
+  min-width: 140px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:active{
+    color: #efefef;
+  }
+
+  &:hover{
+    color: #f5f5f5;
+  }
+}
+
+.clr-etb-orange{
+  color: $etb-orange;
+}
+
+.page{
+  padding-bottom: 30px;
+  padding-top: 87px;
+}
+
+.sell-summary{
+  background-color: #f5f5f5;
+  padding: 20px 10px;
+
+  table.operation, table.payment-opts,
+  table.order-info{
+    background-color: #fff;
+    margin-top: 20px;
+    table-layout: fixed;
+    width: 100%;
+    label, p {
+      color: #666;
+    }
+    label{
+      display: block;
+      font-size: 0.8em;
+      text-transform: none;
+    }
+    p{
+      margin-bottom: 0px;
+    }
+    tr{
+      border: 1px solid #ddd;
+      td{
+        border-right: 1px solid #ddd;
+        color: #666;
+        padding: 10px 20px;
+        vertical-align: top;
+      }
+      td:first-child{
+        text-align: left;
+        width: 60%;
+      }
+
+      td.result{
+        color: $etb-blue;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  table.payment-opts{
+    tr{
+      td{
+        border-right: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        button{
+          background-color: $etb-blue;
+          display: block;
+          font-size: 0.9em;
+          letter-spacing: 2px;
+          margin: auto;
+          margin-top: 20px;
+          position: relative;
+        }
+
+        .media-heading{
+          font-size: 1em;
+          font-weight: 700;
+          color: $etb-orange;
+          text-transform: uppercase;
+        }
+
+        .media-body{
+          text-transform: none;
+        }
+      }
+    }
+  }
+
+  table.order-info{
+    tr{
+      td:first-child{
+        background-color: #efefef;
+        width: 40%;
+      }
+    }
+  }
+
+  .title{
+    color: #555;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.txt-center{
+  text-align: center;
+}
+
+@media screen and (min-width: 610px) {
+  .sell-summary{
+    table.payment-opts{
+      tr{
+        td{
+          border-right: 1px solid #ddd;
+          display: table-cell;
+          width: 50%;
+        }
+        td:first-child{
+          width: 50%;
+        }
+      }
+    }
+  }
+}

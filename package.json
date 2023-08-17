@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chromedriver": "^2.22.2",
+    "es6-promise": "^3.2.1",
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^5.0.0",
+    "mocha": "^3.0.2",
+    "selenium-webdriver": "^2.53.2",
+    "shelljs": "^0.7.3"
+  },
+  "dependencies": {
+    "bootstrap-datepicker": "^1.6.1",
+    "bootstrap-sass": "^3.3.6",
+    "humane-js": "^3.2.2",
+    "jquery": "^2.2.4",
+    "moment": "^2.14.1",
+    "numeral": "^1.5.3",
+    "picturefill": "^3.0.2"
+  }
+}

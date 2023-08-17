@@ -1,0 +1,25 @@
+//colors
+$etb-blue: #0098cb;
+$etb-orange: #ec6625;
+$etb-gray: #e3edf1;
+$etb-blue-txt: #2fadd9;
+$etb-orange-txt: #eb6625;
+
+//bootstrap
+$icon-font-path: '../fonts/bootstrap/';
+$font-family-base: 'Source Sans Pro', sans-serif !default;
+$font-size-base: 16px !default;
+
+$screen-sm: 1200px !default;
+
+$navbar-default-color:  #fff !default;
+$navbar-default-bg:     $etb-orange !default;
+$navbar-default-border:  transparent !default;
+
+$navbar-default-link-color:                #fff !default;
+$navbar-default-link-hover-color:          #efefef !default;
+$navbar-default-link-hover-bg:             transparent !default;
+
+$navbar-default-toggle-hover-bg: darken($etb-gray, 40%) !default;
+$navbar-default-toggle-icon-bar-bg:        #fff !default;
+$navbar-default-toggle-border-color:       #fff !default;

@@ -1,0 +1,256 @@
+#your-plan{
+  #etb-plans{
+    table.open-plan, table.control-plan{
+      table-layout: fixed;
+      width: 100%;
+
+      tr{
+        td{
+          display: inline-block;
+          font-size: 0.9em;
+          letter-spacing: 1px;
+          padding: 20px 10px;
+          text-align: center;
+          text-transform: uppercase;
+          width: 50%;
+        }
+      }
+    }
+
+    .nav-tabs{
+      border: none;
+      width: auto;
+
+      li {
+        border-right: none;
+        width: 33%;
+      }
+    }
+    .nav-tabs > li > a{
+      border: 1px solid $etb-orange;
+      border-left: none;
+      border-right: none;
+      border-radius: initial;
+      color: $etb-orange;
+      font-size: 0.78em;
+      margin: 0px;
+      min-height: 52px;
+      padding-top: 10px;
+      text-transform: uppercase;
+      width: 100%;
+      span{
+        display: none;
+      }
+    }
+
+    .nav-tabs > li > a:first-child{
+      border-left: 1px solid $etb-orange;
+    }
+
+    .nav-tabs > li > a:last-child{
+      border-right: 1px solid $etb-orange;
+    }
+
+    .nav-tabs > li.active > a{
+      background-color: $etb-orange;
+      color: #fff;
+      span{
+        color: #fff;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+
+    .tab-content{
+      background-color: #fbfbfb;
+      margin-top: 20px;
+      padding-bottom: 20px;
+
+      table.open-plan, table.control-plan{
+        tr{
+          border-bottom: none;
+          border-top: none;
+
+          td{
+            border-right: none;
+            vertical-align: top;
+          }
+        }
+      }
+
+      .plan-item{
+        .bottom{
+          background-color: #f5f5f5;
+          border: 1px solid #ddd;
+          border-top: none;
+          padding-top: 10px;
+
+          .btn-action{
+            font-size: 0.8em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            min-width: 120px;
+            padding: 6px 12px;
+            text-transform: uppercase;
+          }
+
+          .messages, .minutes, .size{
+            font-size: 1.2em;
+            color: #777;
+          }
+
+          .includes{
+            border-bottom: 1px solid #eee;
+            text-transform: none;
+            p{
+              display: block;
+              font-size: 1em;
+              font-weight: 700;
+              margin: 5px 0;
+              text-align: center;
+            }
+            i.icon{
+              display: inline-block;
+              background-size: contain;
+              height: 34px;
+              width: 34px;
+            }
+
+            i.spotify{
+              background-image: url(../images/ic_spotify-small.png);
+            }
+            i.whatsapp{
+              background-image: url(../images/ic_whatsapp-small.png);
+            }
+            i.facebook{
+              background-image: url(../images/ic_facebook-small.png);
+            }
+            i.email{
+              background-image: url(../images/ic_email-small.png);
+            }
+          }
+          .minutes{
+            border-bottom: 1px solid #999;
+            padding-bottom: 5px;
+          }
+        }
+        .medium{
+          background-color: #f5f5f5;
+          border-left: 1px solid #ddd;
+          border-right:  1px solid #ddd;
+          min-height: 20px;
+        }
+        .promo{
+          background-color: $etb-orange;
+          color: #fff;
+          text-transform: uppercase;
+        }
+        .top{
+          background-color: $etb-blue;
+          color: #fff;
+          padding: 10px 0;
+          .price{
+            font-size: 1.6em;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .plan-benefits{
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        color: #727272;
+        margin-top: 20px;
+        .title{
+          color: $etb-blue-txt;
+          font-size: 1.4em;
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .panel{
+          display: block;
+          margin: 30px auto;
+        }
+      }
+
+      .plan-benefits.open-plan{
+        .panel{
+          max-width: 330px;
+        }
+      }
+
+      .prepaid-img{
+        overflow: hidden;
+        position: relative;
+        img{
+          max-width: 100%;
+        }
+        .btn-action{
+          display: block;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #your-plan{
+    #etb-plans{
+      .nav-tabs {
+        li{
+          min-width: 200px;
+          a{
+            font-size: 0.9em;
+            padding-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #your-plan{
+    #etb-plans{
+      table.open-plan, table.control-plan{
+        tr{
+          td{
+            display: table-cell;
+            width: inherit;
+          }
+        }
+      }
+
+      .tab-content{
+        .plan-benefits{
+          .panel{
+            display: inline-block;
+            margin: 2%;
+            max-width: 44%;
+          }
+        }
+        .prepaid-img{
+        }
+      }
+    }
+
+    .form-group {
+      .customer-select-operator{
+        height: 36px;
+      }
+
+      .device-offer{
+        .amount{
+          font-size: 1.3em;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

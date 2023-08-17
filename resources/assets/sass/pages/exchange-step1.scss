@@ -1,0 +1,83 @@
+#your-used-smartphone{
+  .form-group{
+    .device-offer.sell-etb{
+      p, .amount {
+        color: $etb-blue-txt;
+        text-align: center;
+      }
+
+      .amount{
+        display: block;
+        font-size: 1.2em;
+        font-weight: 700;
+        margin: auto;
+        position: relative;
+      }
+    }
+
+    .device-state-widget{
+      border: 1px solid #ddd;
+      font-size: 0.9em;
+      margin-top: 20px;
+
+      .bottom{
+        background-color: $etb-blue;
+        color: #fff;
+        padding: 5px;
+
+        .title{
+          font-size: 1em;
+          font-weight: 700;
+          margin-bottom: 5px;
+          margin-left: 20px;
+          padding: 5px;
+          text-transform: uppercase;
+        }
+        .state{
+          color: #fff;
+          margin-left: 5px;
+        }
+      }
+
+      .top{
+        p{
+          padding: 10px;
+          text-align: center;
+        }
+        .slider-wrapper{
+          margin-bottom: 20px;
+          padding: 10px 40px;
+        }
+      }
+
+      .ui-state-active,
+      .ui-widget-content .ui-state-active,
+      .ui-widget-header .ui-state-active,
+      .ui-button:active,
+      .ui-button:active,
+      .ui-button.ui-state-active:hover {
+	      border: 1px solid $etb-orange;
+        background-color: $etb-orange;
+      }
+
+      .ui-widget-content {
+        background-color: $etb-blue;
+	      border: 1px solid $etb-blue;
+      }
+
+      .ui-slider-pips [class*=ui-slider-pip-selected] {
+        color: $etb-orange;
+      }
+    }
+
+    .device-viewer{
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      padding: 40px 30px;
+      img {
+        margin: auto;
+        max-width: 155px;
+      }
+    }
+  }
+}

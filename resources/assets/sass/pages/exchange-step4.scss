@@ -1,0 +1,92 @@
+#book-and-confirm{
+  table.operation{
+    tr{
+      td{
+        color: #666;
+        label{
+          color: #666;
+          font-size: 0.9em;
+        }
+        p{
+          color: #666;
+        }
+        p.pospago-discount{
+          font-size: 0.8em;
+          text-transform: none;
+        }
+      }
+      td.result{
+        color: $etb-orange-txt;
+      }
+    }
+  }
+
+  table.payment-opts{
+    tr{
+      td{
+        color: #666;
+
+        button{
+          background-color: $etb-orange;
+        }
+
+        p{
+          color: #666;
+        }
+
+        p.appreciation-msg{
+          font-size: 0.9em;
+          margin-top: 10px;
+        }
+
+        p.desc-payonline{
+          margin-bottom: 10px;
+        }
+        .pull-right{
+          margin: auto;
+          float: none !important;
+        }
+      }
+      td:first-child{
+        width: 100%;
+      }
+    }
+  }
+
+  .form-group{
+    p.explanation {
+      color: #666;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+
+    .input-group-addon{
+      background-color: $etb-orange;
+      border-color: $etb-orange;
+      color: #fff;
+    }
+  }
+
+  .sell-summary{
+    .title{
+      color: $etb-blue-txt;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #book-and-confirm{
+    table.payment-opts{
+      tr{
+        td{
+          .pull-left, .pull-right{
+            width: 50%;
+          }
+          .pull-right{
+            float: right !important;
+          }
+        }
+      }
+    }
+  }
+}
